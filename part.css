@@ -416,28 +416,28 @@ nav ul li a:hover {
       }
       
       
-      .send{
+       .send{
         background-color: #00a2fe;
         margin-top: 5vw;
         color: #ffffff;
-        font-size:7vw;
+        font-size:6vw;
         border:#ffffff;
-        border-radius:19px;
+        border-radius:8px;
         font-family:arial;
         height: 10vw; 
-        width: 30vw;
+        width: 25vw;
       }
       
       .send:hover{
         color: #00a2fe;
         background-color: #ffffff;
-        font-size:7vw;
+        font-size:6vw;
         text-shadow: #000000;
         font-weight: bold;
         border-color: #00a2fe;
         border-style: solid;
         height: 10vw; 
-        width: 30vw;
+        width: 25vw;
       }
 
   }
