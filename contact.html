@@ -5,12 +5,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
         <link rel="stylesheet" href="part.css">
 
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "0Uz7zyQG4KX_-LGU4",
+                });
+            })();
+            </script>
+
+        <script src="server.js"></script>
     </head>
     <body>
         
         <nav>
 			<input type="checkbox"  id="check" name="">
-			<label for="check" ><i class="fa-solid fa-bars" id="checkbtn"></i></label>
+			<label for="check" ><i class="fa-solid fa-bars-staggered" id="checkbtn"></i></label>
             <label class="myname">Mayank</label>
             <ul>
                 <li><a href="index.html" class="li_a">Home</a></li>
@@ -25,15 +38,14 @@
                 <p> Contact </p>
             </div>
             
-
             <div class="contactinput">
-                <input type="text" placeholder="Name"  class="tam"> <br>
-                <input type="email" placeholder="E-Mail" class="tam"><br>
-                <textarea placeholder="Other Details " class="od"></textarea>
+                <input type="text" placeholder="Name" id="name"  class="tam"> <br>
+                <input type="email" placeholder="E-Mail" id="email" class="tam"><br>
+                <textarea placeholder="Other Details " id="message" class="od"></textarea>
             </div>
             
             <div class="boxsend">
-                <a href=""><button class="send">SEND</button></a>
+                <button class="send" type="submit" onclick="SendMail()">SEND</button>
             </div>
     </body>
 </html>
